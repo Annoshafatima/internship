@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:internship/src/view/homeview/homeview.dart';
+import 'package:internship/src/view/startingviews/splashview/splashview.dart';
+import 'package:internship/main.dart';
 
+import 'src/view/authview/loginview/loginview.dart';
+import 'src/view/authview/signupview/signupview.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -10,7 +16,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ScreenUtilInit(
+        designSize: Size(360,640),
+    child:  MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -31,8 +39,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+      home:Homeview()
+      //Signupview()
+      //Loginview()
+     // Splashview()
+      //const MyHomePage(title: 'Flutter Demo Home Page'),
+      ) );
   }
 }
 
