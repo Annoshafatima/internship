@@ -94,7 +94,7 @@ class _LoginviewState extends State<Loginview> {
                   style: GoogleFonts.jost(
                     fontWeight: FontWeight.w600,
                     fontSize: 24.sp,
-                    color: const Color(0xff6E758C),
+                    color: AppColors.grayColor,
                   ),
                 ),
               ),
@@ -108,14 +108,14 @@ class _LoginviewState extends State<Loginview> {
                       'Hello Again!',
                       style: GoogleFonts.jost(
                         fontSize: 25.sp,
-                        color: const Color(0xff6E758C),
+                        color:AppColors.grayColor,
                       ),
                     ),
                     Text(
                       'Welcome Back',
                       style: GoogleFonts.jost(
                         fontSize: 15.sp,
-                        color: const Color(0xff6E758C),
+                        color: AppColors.grayColor,
                       ),
                     ),
                   ],
@@ -145,7 +145,7 @@ class _LoginviewState extends State<Loginview> {
                 child: Text(
                   'Or Continue With',
                   style: GoogleFonts.jost(
-                    color: const Color(0xff6E758C),
+                    color: AppColors.grayColor,
                     fontWeight: FontWeight.w600,
                     fontSize: 10.sp,
                   ),
@@ -154,7 +154,7 @@ class _LoginviewState extends State<Loginview> {
               SizedBox(height: 25.h),
 
               // Facebook/Google Login
-              FbGoogle(),  // Assuming FbGoogle widget handles social login functionality
+              FbGoogle(),
 
               SizedBox(height: 15.h),
 
@@ -165,7 +165,7 @@ class _LoginviewState extends State<Loginview> {
                   Text(
                     'Not a Member?',
                     style: GoogleFonts.roboto(
-                      color: const Color(0xff6E758C),
+                      color: AppColors.grayColor,
                       fontWeight: FontWeight.w600,
                       fontSize: 10.sp,
                     ),

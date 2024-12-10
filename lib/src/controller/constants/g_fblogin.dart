@@ -20,7 +20,7 @@ class _FbGoogleState extends State<FbGoogle> {
         Container(height: 48.h,
           width: 154.w,
           decoration: BoxDecoration(
-              border: Border.all(color: Color(0xff888888)),
+              border: Border.all(color: AppColors.grayColor),
               borderRadius: BorderRadius.circular(12.r)
 
           ),
@@ -28,7 +28,7 @@ class _FbGoogleState extends State<FbGoogle> {
             children: [
               Image.asset(AppImages.google,width: 24.w,height: 24.h,),
               SizedBox(width: 10,),
-              Text('Google',style: GoogleFonts.roboto(color: Color(0xff888888),fontWeight: FontWeight.w400,fontSize: 14.sp),),
+              Text('Google',style: GoogleFonts.roboto(color:AppColors.grayColor,fontWeight: FontWeight.w400,fontSize: 14.sp),),
 
             ],
           ),),

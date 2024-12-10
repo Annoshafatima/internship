@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:internship/src/controller/assets/images/appimages.dart';
 import 'package:internship/src/controller/colors/appcolors.dart';
@@ -17,8 +18,9 @@ class _HomeviewState extends State<Homeview> {
       centerTitle: true,
       actions:[
 Padding(padding:EdgeInsets.only(right: 20) ,
-child: CircleAvatar(backgroundImage: AssetImage(AppImages.profile),),)
-  ] )
+child: CircleAvatar(backgroundImage: AssetImage(AppImages.profile),),),
+ ], ),
+
 
     );
   }

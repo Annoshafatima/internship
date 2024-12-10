@@ -60,6 +60,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:internship/src/controller/colors/appcolors.dart';
 
 class CustomTextField extends StatelessWidget {
   final String hintText;
@@ -79,16 +80,16 @@ class CustomTextField extends StatelessWidget {
         obscureText: isPassword, // Password is always hidden if isPassword is true
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: Color(0xff6E758C)),
+            borderSide:  BorderSide(color: AppColors.grayColor),
             borderRadius: BorderRadius.circular(20.r),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: Color(0xff6E758C)),
+            borderSide:  BorderSide(color: AppColors.grayColor),
             borderRadius: BorderRadius.circular(20.r),
           ),
           hintText: hintText,
           hintStyle: GoogleFonts.roboto(
-            color: const Color(0xff6E758C),
+            color: AppColors.grayColor,
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
           ),

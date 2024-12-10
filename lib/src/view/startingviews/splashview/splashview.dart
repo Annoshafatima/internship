@@ -96,7 +96,7 @@ class _SplashviewState extends State<Splashview> {
                 'Organize, plan, and collaborate on tasks with Mtodo. Your busy life deserves this. You can manage checklists and your goals.',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.roboto(
-                  color: const Color(0xFF6E758C)
+                  color: AppColors.grayColor,
                   ),
                   
                 ),

@@ -97,7 +97,7 @@ class _SignupviewState extends State<Signupview> {
                   style: GoogleFonts.jost(
                     fontWeight: FontWeight.w500,
                     fontSize: 20.sp,
-                    color: const Color(0xff6E758C),
+                    color: AppColors.grayColor,
                   ),
                 ),
               ),
@@ -112,21 +112,21 @@ class _SignupviewState extends State<Signupview> {
                       style: GoogleFonts.jost(
                         fontWeight: FontWeight.w500,
                         fontSize: 24.sp,
-                        color: const Color(0xff6E758C),
+                        color:AppColors.grayColor,
                       ),
                     ),
                     Text(
                       'Welcome to Mtodo app',
                       style: GoogleFonts.jost(
                         fontSize: 16.sp,
-                        color: const Color(0xff6E758C),
+                        color: AppColors.grayColor,
                       ),
                     ),
                     Text(
                       'Sign up to get started',
                       style: GoogleFonts.jost(
                         fontSize: 16.sp,
-                        color: const Color(0xff6E758C),
+                        color: AppColors.grayColor,
                       ),
                     ),
                   ],
@@ -138,7 +138,7 @@ class _SignupviewState extends State<Signupview> {
               CustomTextField(hintText: 'Your name'),
               CustomTextField(hintText: 'Enter Email'),
               CustomTextField(hintText: 'Password', isPassword: true),
-              CustomTextbutton(), // Assuming this widget is implemented correctly
+              CustomTextbutton(),
               SizedBox(height: 30.h),
 
               // Sign Up Button
@@ -159,7 +159,7 @@ class _SignupviewState extends State<Signupview> {
                   Text(
                     'Already have an account?',
                     style: GoogleFonts.roboto(
-                      color: const Color(0xff6E758C),
+                      color: AppColors.grayColor,
                       fontSize: 13.sp,
                     ),
                   ),

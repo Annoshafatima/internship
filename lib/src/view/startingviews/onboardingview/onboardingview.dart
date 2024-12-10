@@ -81,7 +81,7 @@ class _OnboardingviewState extends State<Onboardingview> {
                 ),
                 Text(
                   'mtodo',
-                  style: GoogleFonts.jost(fontWeight: FontWeight.w500, fontSize: 24.sp, color: Color(0xff9BA3EB)),
+                  style: GoogleFonts.jost(fontWeight: FontWeight.w500, fontSize: 24.sp, color: AppColors.grayColor),
                 ),
                 SizedBox(height: 5.h),
                 CustomButton(
@@ -98,7 +98,7 @@ class _OnboardingviewState extends State<Onboardingview> {
                   children: [
                     Text(
                       'Already have an account?',
-                      style: GoogleFonts.roboto(color: Color(0xff8D93AB), fontSize: 13.sp),
+                      style: GoogleFonts.roboto(color: AppColors.grayColor, fontSize: 13.sp),
                     ),
                     Text(
                       'Log In',
