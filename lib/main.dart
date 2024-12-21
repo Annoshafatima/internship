@@ -6,6 +6,7 @@ import 'package:internship/main.dart';
 
 import 'src/view/authview/loginview/loginview.dart';
 import 'src/view/authview/signupview/signupview.dart';
+import 'src/view/homeview/insertdataview/insertdataview.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         designSize: Size(360,640),
-    child:  MaterialApp(
+    child:  MaterialApp(debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -39,7 +40,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Homeview()
+      home://Insertdataview()
+      Homeview()
       //Signupview()
       //Loginview()
       //Splashview()
